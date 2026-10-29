@@ -1,11 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#0b7a43">
-<meta name="description" content="AᴜʀᴀㅤAʀᴍᴀɴㅤƬᴏᴜʀ — Free Fire Tournament">
-<title>AᴜʀᴀㅤAʀᴍᴀɴㅤƬᴏᴜʀ</title>
+
+<title>Aura Arman Tour | Official Free Fire Tournament Platform</title>
+<meta name="description" content="Aura Arman Tour is a Free Fire tournament platform. Explore tournaments, compete with players, check matches, and download the official Aura Arman Tour app at auraarmantour.shop.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="RS RAKIB">
+<meta name="creator" content="RS RAKIB">
+<meta name="publisher" content="Aura Arman Tour">
+<meta property="og:image" content="https://videotourl.com/images/1789792991627-2a906ffa-fbc0-4f79-9d9b-8dddb80ca667.jpg">
+<meta property="og:image:alt" content="Aura Arman Tour logo">
+<meta name="twitter:image" content="https://videotourl.com/images/1789792991627-2a906ffa-fbc0-4f79-9d9b-8dddb80ca667.jpg">
+<meta name="application-name" content="Aura Arman Tour">
+<meta name="keywords" content="Aura Arman Tour, auraarmantour.shop, Aura Arman Tour official, Free Fire tournament, Free Fire tournament Bangladesh, Aura Arman Tour app">
+
+<link rel="canonical" href="https://auraarmantour.shop/">
+<link rel="alternate" hreflang="en" href="https://auraarmantour.shop/">
+<link rel="alternate" hreflang="bn" href="https://auraarmantour.shop/">
+<link rel="alternate" hreflang="x-default" href="https://auraarmantour.shop/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aura Arman Tour">
+<meta property="og:title" content="Aura Arman Tour | Official Free Fire Tournament Platform">
+<meta property="og:description" content="Visit the official Aura Arman Tour website to explore Free Fire tournaments, matches, platform features, and app downloads.">
+<meta property="og:url" content="https://auraarmantour.shop/">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Aura Arman Tour">
+<meta name="twitter:description" content="Official website of Aura Arman Tour, a Free Fire tournament platform.">
+
+<link rel="icon" type="image/jpeg" href="https://videotourl.com/images/1789792991627-2a906ffa-fbc0-4f79-9d9b-8dddb80ca667.jpg">
+<link rel="shortcut icon" href="https://videotourl.com/images/1789792991627-2a906ffa-fbc0-4f79-9d9b-8dddb80ca667.jpg">
+<link rel="apple-touch-icon" href="https://videotourl.com/images/1789792991627-2a906ffa-fbc0-4f79-9d9b-8dddb80ca667.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://auraarmantour.shop/#website",
+      "url": "https://auraarmantour.shop/",
+      "name": "Aura Arman Tour",
+      "alternateName": [
+        "AURA ARMAN TOUR",
+        "AᴜʀᴀㅤAʀᴍᴀɴㅤƬᴏᴜʀ"
+      ],
+      "description": "The official website of Aura Arman Tour, a Free Fire tournament platform.",
+      "inLanguage": ["en", "bn"],
+      "publisher": {
+        "@id": "https://auraarmantour.shop/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://auraarmantour.shop/#organization",
+      "name": "Aura Arman Tour",
+      "alternateName": "AURA ARMAN TOUR",
+      "url": "https://auraarmantour.shop/",
+      "description": "Aura Arman Tour provides a website and app for exploring Free Fire tournaments, matches, and related platform features.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://videotourl.com/images/1789792991627-2a906ffa-fbc0-4f79-9d9b-8dddb80ca667.jpg"
+      },
+      "founder": {
+        "@id": "https://rs.auraarmantour.shop/#developer"
+      },
+      "creator": {
+        "@id": "https://rs.auraarmantour.shop/#developer"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://rs.auraarmantour.shop/#developer",
+      "name": "RS RAKIB",
+      "url": "https://rs.auraarmantour.shop/",
+      "jobTitle": "Developer",
+      "description": "Developer of the Aura Arman Tour Free Fire tournament platform.",
+      "worksFor": {
+        "@id": "https://auraarmantour.shop/#organization"
+      },
+      "sameAs": [
+        "https://github.com/rsrakib19472195"
+      ]
+    }
+  ]
+}
+</script>
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,6 +149,7 @@ body{
   pointer-events:none;
   z-index:9999;
   transition:.3s ease;
+  max-width:calc(100% - 32px);
 }
 .toast.show{
   transform:translate(-50%,0);
@@ -74,45 +161,11 @@ iframe{border:0}
 
 <body>
 
-<!--
-  ============================================================
-  NETLIFY ENVIRONMENT LINK CONFIG
-  ============================================================
-  ONE-FILE NETLIFY SETUP
-  -----------------------
-  Keep only this index.html in your repository.
-
-  Add these variables in Netlify:
-    APP_DOWNLOAD_URL
-    YOUTUBE_EMBED_URL
-    DEVELOPER_URL
-
-  Then use this Netlify Build Command:
-
-  node -e "const fs=require('fs');let p=fs.readFileSync('index.html','utf8');p=p.replaceAll('__APP_DOWNLOAD_URL__',process.env.APP_DOWNLOAD_URL||'');p=p.replaceAll('__YOUTUBE_EMBED_URL__',process.env.YOUTUBE_EMBED_URL||'');p=p.replaceAll('__DEVELOPER_URL__',process.env.DEVELOPER_URL||'');fs.writeFileSync('index.html',p)"
-
-  Publish directory: /
-
-  Netlify injects the three non-secret URLs at build time.
-  No admin panel and no second project file are required.
-  ============================================================
--->
-
 <script>
-window.__NETLIFY_ENV__ = window.__NETLIFY_ENV__ || {};
-
 const SITE_CONFIG = {
-  appDownloadUrl:
-    window.__NETLIFY_ENV__.APP_DOWNLOAD_URL ||
-    "__APP_DOWNLOAD_URL__",
-
-  youtubeEmbedUrl:
-    window.__NETLIFY_ENV__.YOUTUBE_EMBED_URL ||
-    "__YOUTUBE_EMBED_URL__",
-
-  developerUrl:
-    window.__NETLIFY_ENV__.DEVELOPER_URL ||
-    "__DEVELOPER_URL__"
+  appDownloadUrl: "https://github.com/rsrakib19472195/AURASKILL-19/raw/refs/heads/main/AURA%20ARMAN%20TOUR.apk",
+  developerUrl: "https://rs.auraarmantour.shop",
+  helpUrl: "https://chat.whatsapp.com/DCxfqldDvbl8wOtk7PzCP9?s=cl&p=a&mlu=4&ilr=4"
 };
 </script>
 
@@ -121,7 +174,7 @@ const SITE_CONFIG = {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="h-16 flex items-center justify-between">
 
-        <a href="#" class="flex items-center gap-3">
+        <a href="#home" class="flex items-center gap-3" aria-label="Aura Arman Tour home">
           <div class="w-10 h-10 rounded-xl green-gradient text-white flex items-center justify-center shadow-lg">
             <i class="fa-solid fa-trophy"></i>
           </div>
@@ -133,7 +186,7 @@ const SITE_CONFIG = {
 
         <div class="hidden md:flex items-center gap-7 text-sm font-semibold">
           <a href="#home" class="hover:text-green-700">Home</a>
-          <a href="#tutorial" class="hover:text-green-700">Tutorial</a>
+          <a href="#help" class="hover:text-green-700">Tutorial</a>
           <a href="#features" class="hover:text-green-700">Features</a>
           <a href="#developer" class="hover:text-green-700">Developer</a>
           <button onclick="downloadApp()" class="btn px-4 py-2 rounded-xl green-gradient text-white shadow-md">
@@ -141,7 +194,7 @@ const SITE_CONFIG = {
           </button>
         </div>
 
-        <button onclick="downloadApp()" class="md:hidden btn w-10 h-10 rounded-xl green-gradient text-white shadow-md">
+        <button onclick="downloadApp()" aria-label="Download Aura Arman Tour app" class="md:hidden btn w-10 h-10 rounded-xl green-gradient text-white shadow-md">
           <i class="fa-solid fa-download"></i>
         </button>
       </div>
@@ -162,13 +215,15 @@ const SITE_CONFIG = {
         </div>
 
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+          <span class="block text-green-700 text-2xl sm:text-3xl mb-3">Aura Arman Tour</span>
           Play. Compete.
           <span class="text-green-700">Conquer.</span>
         </h1>
 
         <p class="mt-5 text-gray-600 text-base sm:text-lg max-w-xl leading-8">
-          Join exciting Free Fire tournaments, compete with skilled players
-          and show everyone what you can do.
+          Welcome to Aura Arman Tour, a Free Fire tournament platform.
+          Explore tournaments, compete with players, follow match updates
+          and discover the official app.
         </p>
 
         <div class="flex flex-wrap gap-3 mt-8">
@@ -177,7 +232,7 @@ const SITE_CONFIG = {
             Download App
           </button>
 
-          <a href="#tutorial" class="btn bg-white border border-green-100 text-green-800 px-6 py-3 rounded-xl font-bold shadow-sm">
+          <a href="#help" class="btn bg-white border border-green-100 text-green-800 px-6 py-3 rounded-xl font-bold shadow-sm">
             <i class="fa-solid fa-play mr-2"></i>
             How It Works
           </a>
@@ -209,7 +264,7 @@ const SITE_CONFIG = {
 
             <h2 class="text-2xl font-bold text-center mt-6">Ready to Battle?</h2>
             <p class="text-gray-500 text-center mt-2">
-              Download the app and enter the battlefield.
+              Download the Aura Arman Tour app and enter the battlefield.
             </p>
 
             <button onclick="downloadApp()" class="btn w-full mt-7 green-gradient text-white py-3.5 rounded-xl font-bold shadow-lg">
@@ -229,26 +284,23 @@ const SITE_CONFIG = {
   </div>
 </section>
 
-<section id="tutorial" class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-10">
-      <span class="text-green-700 font-bold text-sm">TUTORIAL</span>
-      <h2 class="text-3xl sm:text-4xl font-bold mt-2">How To Play</h2>
-      <p class="text-gray-500 mt-3">Watch the tutorial and get started easily.</p>
+<section id="help" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <div class="w-16 h-16 mx-auto rounded-2xl bg-green-50 text-green-700 flex items-center justify-center">
+      <i class="fa-solid fa-headset text-2xl"></i>
     </div>
 
-    <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden bg-gray-100 shadow-xl border border-green-50">
-      <div class="aspect-video">
-        <iframe
-          id="youtubeFrame"
-          class="w-full h-full"
-          src=""
-          title="Tournament Tutorial"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
+    <span class="block text-green-700 font-bold text-sm mt-6">ANY HELP?</span>
+    <h2 class="text-3xl sm:text-4xl font-bold mt-2">Contact Us</h2>
+    <p class="text-gray-500 mt-3 max-w-xl mx-auto leading-7">
+      Tournament, registration or app-related help লাগলে আমাদের WhatsApp group-এ contact করো।
+    </p>
+
+    <a id="helpLink" href="#" target="_blank" rel="noopener noreferrer"
+       class="btn inline-flex items-center mt-7 px-6 py-3 rounded-xl green-gradient text-white font-bold shadow-lg">
+      <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+      Contact Us on WhatsApp
+    </a>
   </div>
 </section>
 
@@ -257,8 +309,8 @@ const SITE_CONFIG = {
 
     <div class="text-center mb-12">
       <span class="text-green-700 font-bold text-sm">WHY US</span>
-      <h2 class="text-3xl sm:text-4xl font-bold mt-2">Built For Gamers</h2>
-      <p class="text-gray-500 mt-3">Everything you need for a smooth tournament experience.</p>
+      <h2 class="text-3xl sm:text-4xl font-bold mt-2">Aura Arman Tour Features</h2>
+      <p class="text-gray-500 mt-3">Explore the features of our Free Fire tournament platform.</p>
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -291,8 +343,8 @@ const SITE_CONFIG = {
         <div class="w-12 h-12 rounded-xl bg-green-50 text-green-700 flex items-center justify-center">
           <i class="fa-solid fa-headset text-xl"></i>
         </div>
-        <h3 class="font-bold text-lg mt-5">24/7 Support</h3>
-        <p class="text-gray-500 text-sm mt-2 leading-6">Get help whenever you need it.</p>
+        <h3 class="font-bold text-lg mt-5">Player Support</h3>
+        <p class="text-gray-500 text-sm mt-2 leading-6">Contact our support community for tournament and app-related help.</p>
       </div>
 
     </div>
@@ -305,13 +357,14 @@ const SITE_CONFIG = {
       <i class="fa-solid fa-code text-2xl"></i>
     </div>
 
-    <h2 class="text-3xl font-bold mt-5">Developer</h2>
+    <h2 class="text-3xl font-bold mt-5">Aura Arman Tour Developer</h2>
+    <p class="text-green-700 font-bold text-xl mt-3">Developed by RS RAKIB</p>
     <p class="text-gray-500 mt-3 max-w-xl mx-auto">
-      Want to know more about the developer or the project?
-      Visit the developer page below.
+      Want to know more about the developer or the Aura Arman Tour project?
+      Visit the developer page below. The Aura Arman Tour project developer is RS RAKIB.
     </p>
 
-    <a id="developerLink" href="#" target="_blank" rel="noopener"
+    <a id="developerLink" href="#" target="_blank" rel="noopener noreferrer"
        class="btn inline-flex items-center mt-7 px-6 py-3 rounded-xl green-gradient text-white font-bold shadow-lg">
       <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
       Developer Info
@@ -325,25 +378,28 @@ const SITE_CONFIG = {
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col md:flex-row items-center justify-between gap-5">
       <div>
-        <div class="font-bold text-lg">AᴜʀᴀㅤAʀᴍᴀɴㅤƬᴏᴜʀ</div>
+        <div class="font-bold text-lg">Aura Arman Tour</div>
         <div class="text-white/60 text-sm mt-1">Free Fire Tournament Platform</div>
+        <a href="https://auraarmantour.shop/" class="text-white/60 text-sm mt-1 inline-block">
+          auraarmantour.shop
+        </a>
       </div>
 
       <div class="flex items-center gap-5 text-sm text-white/70">
         <a href="#home" class="hover:text-white">Home</a>
-        <a href="#tutorial" class="hover:text-white">Tutorial</a>
+        <a href="#help" class="hover:text-white">Tutorial</a>
         <a href="#features" class="hover:text-white">Features</a>
         <a href="#developer" class="hover:text-white">Developer</a>
       </div>
     </div>
 
     <div class="border-t border-white/10 mt-8 pt-6 text-center text-xs text-white/50">
-      © <span id="year"></span> AᴜʀᴀㅤAʀᴍᴀɴㅤƬᴏᴜʀ. All rights reserved.
+      © <span id="year"></span> Aura Arman Tour. All rights reserved.
     </div>
   </div>
 </footer>
 
-<div id="toast" class="toast bg-[#10231a] text-white px-5 py-3 rounded-xl shadow-2xl text-sm"></div>
+<div id="toast" role="status" aria-live="polite" class="toast bg-[#10231a] text-white px-5 py-3 rounded-xl shadow-2xl text-sm"></div>
 
 <script>
 const $ = id => document.getElementById(id);
@@ -353,43 +409,38 @@ function showToast(message){
   toast.textContent = message;
   toast.classList.add('show');
   clearTimeout(window.__toastTimer);
-  window.__toastTimer = setTimeout(() => toast.classList.remove('show'), 2800);
-}
-
-function validLink(url){
-  return url &&
-         typeof url === 'string' &&
-         /^https?:\/\/\S+$/i.test(url) &&
-         !url.includes('__APP_') && !url.includes('__YOUTUBE_') && !url.includes('__DEVELOPER_');
+  window.__toastTimer = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2800);
 }
 
 function downloadApp(){
-  if(validLink(SITE_CONFIG.appDownloadUrl)){
-    window.open(SITE_CONFIG.appDownloadUrl, '_blank', 'noopener');
-  }else{
-    showToast('App download link এখনো সেট করা হয়নি।');
-  }
+  const toast = $('toast');
+  toast.innerHTML =
+    '<div class="flex items-center gap-3">' +
+      '<span class="w-9 h-9 rounded-full bg-green-500/15 text-green-400 flex items-center justify-center">' +
+        '<i class="fa-solid fa-download"></i>' +
+      '</span>' +
+      '<div>' +
+        '<div class="font-bold text-white">ডাউনলোড শুরু হয়েছে</div>' +
+        '<div class="text-xs text-white/65 mt-0.5">AURA ARMAN TOUR অ্যাপটি ডাউনলোড হচ্ছে...</div>' +
+      '</div>' +
+    '</div>';
+
+  toast.classList.add('show');
+  clearTimeout(window.__toastTimer);
+  window.__toastTimer = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3500);
+
+  setTimeout(() => {
+    window.location.href = SITE_CONFIG.appDownloadUrl;
+  }, 250);
 }
 
 function setupLinks(){
-  const frame = $('youtubeFrame');
-  const dev = $('developerLink');
-
-  if(validLink(SITE_CONFIG.youtubeEmbedUrl)){
-    frame.src = SITE_CONFIG.youtubeEmbedUrl;
-  }else{
-    frame.srcdoc =
-      '<div style="height:100%;display:flex;align-items:center;justify-content:center;font-family:Arial;color:#6b7280;background:#f3f4f6;text-align:center;padding:20px">YouTube tutorial link is not configured.</div>';
-  }
-
-  if(validLink(SITE_CONFIG.developerUrl)){
-    dev.href = SITE_CONFIG.developerUrl;
-  }else{
-    dev.addEventListener('click', e => {
-      e.preventDefault();
-      showToast('Developer link এখনো সেট করা হয়নি।');
-    });
-  }
+  $('developerLink').href = SITE_CONFIG.developerUrl;
+  $('helpLink').href = SITE_CONFIG.helpUrl;
 }
 
 $('year').textContent = new Date().getFullYear();
